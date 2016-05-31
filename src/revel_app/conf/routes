@@ -4,7 +4,16 @@
 
 module:testrunner
 
-GET     /                                       App.Index
+GET     /person                                       Person.Add
+GET    	/person/:id            						  Person.Get
+
+#POST    /person       Person.Add
+#PUT     /person/:id   Person.Update
+#DELETE  /person/:id   Person.Delete
+
+
+
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
